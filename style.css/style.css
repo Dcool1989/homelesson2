@@ -46,17 +46,36 @@ body {
     background-size: cover;
 }
 
-ol {
-    list-style-type: circle;
-    margin-left: 20px;
+ul {
+    list-style-type: none;
+    color: white;
+    margin-left: 60px;
     display: inline-flex;
     padding: 30px;
+    position: relative;
 }
 
-ol li {
-    padding: 30px;
+ul li {
+    padding-right: 280px;
 }
 
+ul li::before {
+     content: '';
+     background: white;
+     border-radius: 50%;
+     width: 7px;
+     height: 7px;
+     display: block;
+     position: absolute;
+     top: 35px;
+     left: 10px;
+}
+
+ul li:hover::before {
+    background: url(/plane.png) 10% 10% / contain no-repeat;
+    border-radius: 0px;
+
+}
 a {
     color: white;
     text-decoration: none;
