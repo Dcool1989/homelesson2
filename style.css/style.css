@@ -41,7 +41,7 @@ button {
 }
 
 body {
-    background-image: url("/planemain.png");
+    background-image: url("../planemain.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -72,13 +72,14 @@ ul li::before {
 }
 
 ul li:hover::before {
-    background: url(/plane.png) 10% 10% / contain no-repeat;
+    background: url(../plane.png) 10% 10% / contain no-repeat;
     border-radius: 0px;
 
 }
 a {
     color: white;
     text-decoration: none;
+    
 }
 
 .nowhere {
